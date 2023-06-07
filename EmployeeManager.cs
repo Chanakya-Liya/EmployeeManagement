@@ -13,18 +13,18 @@ namespace Employee
         public IEmployeeMailing EmployeeMailing { get; set; }
         public IEmployeeTax EmployeeTax { get; set; }
 
-        public EmployeeManager(IEmployeeDatabase EmployeeDatabase, IEmployeeHoliday EmployeeHoliday, IEmployeeMailing EmployeeMailing, IEmployeeTax EmployeeTax)
+        public EmployeeManager(IEmployeeDatabase employeeDatabase, IEmployeeMailing employeeMailing, IEmployeeTax employeeTax, IEmployeeHoliday employeeHoliday)
         {
-            this.EmployeeDatabase = EmployeeDatabase;
-            this.EmployeeHoliday = EmployeeHoliday;
-            this.EmployeeMailing = EmployeeMailing;
-            this.EmployeeTax = EmployeeTax;
+            EmployeeDatabase = employeeDatabase;
+            EmployeeMailing = employeeMailing;
+            EmployeeTax = employeeTax;
+            EmployeeHoliday = employeeHoliday;
         }
 
-        public Task HireEmployee(Employee employee)
+        public async Task<Employees> HireEmployee(Employees employee)
         {
             //Hire Employee
-            return Task.CompletedTask;
+            return employee;
         }
     }
 }

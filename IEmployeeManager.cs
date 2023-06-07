@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Employee
 {
-    public interface IEmployeeManager
+    internal interface IEmployeeManager
     {
-        public  Task HireEmployee(Employee employee);
+        public Task<Employees> HireEmployee(Employees employee);
     }
 
 }

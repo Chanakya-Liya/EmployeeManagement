@@ -8,10 +8,10 @@ namespace Employee
 {
     internal class EmployeeMailing : IEmployeeMailing
     {
-        public Task AddEmployeeToMailingServer(Employee employee)
+        public async Task<Employees> AddEmployeeToMailingServer(Employees employee)
         {
             //Adding the employee to the mailing server
-            return Task.CompletedTask;
+            return employee;
         }
     }
 }

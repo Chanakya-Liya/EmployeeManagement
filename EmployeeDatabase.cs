@@ -8,22 +8,22 @@ namespace Employee
 {
     internal class EmployeeDatabase : IEmployeeDatabase
     {
-        public Task AddEmployeeEntry(Employee employee)
+        public async Task<Employees> AddEmployeeEntry(Employees employee)
         {
             //Add employee details to the database
-            return Task.CompletedTask;
+            return employee;
         }
 
-        public Task UpdateTaxScheme(Employee employee)
+        public async Task<Employees> UpdateTaxScheme(Employees employee)
         {
             //Update tax schema in the database
-            return Task.CompletedTask;
+            return employee;
         }
 
-        public Task UpdateHolidays(Employee employee)
+        public async Task<Employees> UpdateHolidays(Employees employee)
         {
             //Update holidays in the database
-            return Task.CompletedTask;
+            return employee;
         }
     }
 }

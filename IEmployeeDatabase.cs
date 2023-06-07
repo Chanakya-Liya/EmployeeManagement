@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Employee
 {
-    public interface IEmployeeDatabase
+    internal interface IEmployeeDatabase
     {
-        public Task AddEmployeeEntry(Employee employee);
-        public Task UpdateTaxScheme(Employee employee);
-        public Task UpdateHolidays(Employee employee);
+        public Task<Employees> AddEmployeeEntry(Employees employee);
+        public Task<Employees> UpdateTaxScheme(Employees employee);
+        public Task<Employees> UpdateHolidays(Employees employee);
     }
 }

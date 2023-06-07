@@ -8,7 +8,7 @@ namespace Employee
 {
     internal class EmployeeTax : IEmployeeTax
     {
-        public void CalculateEmployeeTaxSchema(Employee employee)
+        public void CalculateEmployeeTaxSchema(Employees employee)
         {
             //Do the mathematical operations required
         }

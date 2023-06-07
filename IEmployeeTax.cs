@@ -8,6 +8,6 @@ namespace Employee
 {
     internal interface IEmployeeTax
     {
-        public void CalculateEmployeeTaxSchema(Employee employee);
+        public void CalculateEmployeeTaxSchema(Employees employee);
     }
 }

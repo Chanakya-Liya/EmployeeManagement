@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace Employee
 {
-    internal class Employee
+    internal class Employees
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public int salary { get; set; }
+
+        public Employees(string firstName, string lastName, string email)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+        }
     }
 }

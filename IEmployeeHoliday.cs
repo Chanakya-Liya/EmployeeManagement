@@ -8,6 +8,6 @@ namespace Employee
 {
     internal interface IEmployeeHoliday
     {
-        public void CalculateEmployeeHolidays(Employee employee);
+        public void CalculateEmployeeHolidays(Employees employee);
     }
 }
