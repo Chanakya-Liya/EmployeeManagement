@@ -8,7 +8,7 @@ namespace Employee
 {
     public interface IEmployeeManager
     {
-        public async Task<Employee> HireEmployee(Employee employee);
+        public  Task HireEmployee(Employee employee);
     }
 
 }

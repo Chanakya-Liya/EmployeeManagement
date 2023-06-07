@@ -8,6 +8,6 @@ namespace Employee
 {
     internal interface IEmployeeTax
     {
-        public async Task<Employee> CalculateEmployeeTaxSchema(Employee employee);
+        public void CalculateEmployeeTaxSchema(Employee employee);
     }
 }

@@ -8,6 +8,6 @@ namespace Employee
 {
     internal interface IEmployeeHoliday
     {
-        public async Task<Employee> CalculateEmployeeHolidays(Employee employee);
+        public void CalculateEmployeeHolidays(Employee employee);
     }
 }

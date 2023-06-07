@@ -8,8 +8,8 @@ namespace Employee
 {
     public interface IEmployeeDatabase
     {
-        public async Task<Employee> AddEmployeeEntry(Employee employee);
-        public async Task<Employee> UpdateTaxScheme(Employee employee);
-        public async Task<Employee> UpdateHolidays(Employee employee);
+        public Task AddEmployeeEntry(Employee employee);
+        public Task UpdateTaxScheme(Employee employee);
+        public Task UpdateHolidays(Employee employee);
     }
 }

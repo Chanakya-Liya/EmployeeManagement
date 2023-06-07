@@ -8,6 +8,6 @@ namespace Employee
 {
     internal interface IEmployeeMailing
     {
-        public async Task<Employee> AddEmployeeToMailingServer(Employee employee); 
+        public Task AddEmployeeToMailingServer(Employee employee); 
     }
 }

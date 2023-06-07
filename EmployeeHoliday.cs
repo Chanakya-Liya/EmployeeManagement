@@ -8,10 +8,9 @@ namespace Employee
 {
     internal class EmployeeHoliday : IEmployeeHoliday
     {
-        public Task CalculateEmployeeHolidays(Employee employee)
+        public void CalculateEmployeeHolidays(Employee employee)
         {
             //Do the mathematical operations required
-            return Task.CompletedTask;
         }
     }
 }
